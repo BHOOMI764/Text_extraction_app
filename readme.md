@@ -166,42 +166,7 @@ custom_config = r'-l eng --oem 3 --psm 6'
 | `GET` | `/` | Home page with upload form |
 | `POST` | `/` | Process uploaded image and extract text |
 
-### Request Format
 
-**POST /**
-- **Content-Type**: `multipart/form-data`
-- **Body**: `image_upload` (file)
-
-### Response Format
-
-```json
-{
-  "status": "success",
-  "extracted_text": ["Line 1", "Line 2", "..."],
-  "image_url": "/static/uploads/filename.png"
-}
-```
-
-## 🧪 Testing
-
-### Sample Images
-
-Use the provided sample images in the `sample_data/` folder:
-
-```bash
-# Test with sample image
-curl -X POST -F "image_upload=@sample_data/img.png" http://localhost:5000/
-```
-
-### Supported Image Formats
-
-- **PNG** (.png)
-- **JPEG** (.jpg, .jpeg)
-- **BMP** (.bmp)
-- **TIFF** (.tiff)
-- **GIF** (.gif)
-
-s
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
@@ -228,27 +193,7 @@ We welcome contributions! Please follow these steps:
 - Update documentation
 - Ensure backward compatibility
 
-## 🐛 Troubleshooting
 
-### Common Issues
-
-**Issue**: `Tesseract not found`
-```bash
-# Solution: Add Tesseract to PATH or specify path
-export PATH=$PATH:/usr/local/bin/tesseract
-```
-
-**Issue**: `Permission denied on uploads folder`
-```bash
-# Solution: Set proper permissions
-chmod 755 app/static/uploads
-```
-
-**Issue**: `Module not found errors`
-```bash
-# Solution: Reinstall dependencies
-pip install -r requirements.txt --force-reinstall
-```
 
 ## 📊 Performance Tips
 
