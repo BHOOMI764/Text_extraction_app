@@ -201,52 +201,7 @@ curl -X POST -F "image_upload=@sample_data/img.png" http://localhost:5000/
 - **TIFF** (.tiff)
 - **GIF** (.gif)
 
-## 🚀 Deployment
-
-### Heroku Deployment
-
-1. **Install Heroku CLI**
-2. **Login to Heroku**
-   ```bash
-   heroku login
-   ```
-3. **Create Heroku app**
-   ```bash
-   heroku create your-app-name
-   ```
-4. **Deploy**
-   ```bash
-   git push heroku main
-   ```
-
-### Azure Deployment
-
-1. **Install Azure CLI**
-2. **Login to Azure**
-   ```bash
-   az login
-   ```
-3. **Create resource group**
-   ```bash
-   az group create --name myResourceGroup --location eastus
-   ```
-4. **Deploy using Azure App Service**
-
-### Docker Deployment
-
-```dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-COPY . .
-EXPOSE 5000
-
-CMD ["python", "app.py"]
-```
-
+s
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
