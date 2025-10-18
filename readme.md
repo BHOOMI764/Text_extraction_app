@@ -145,17 +145,6 @@ UPLOAD_FOLDER=app/static/uploads
 MAX_CONTENT_LENGTH=16777216  # 16MB
 ```
 
-### Tesseract Configuration
-
-The app uses optimized Tesseract settings for better accuracy:
-
-```python
-custom_config = r'-l eng --oem 3 --psm 6'
-```
-
-- `-l eng`: English language
-- `--oem 3`: Default OCR Engine Mode
-- `--psm 6`: Uniform block of text
 
 ## 📖 API Documentation
 
@@ -165,33 +154,6 @@ custom_config = r'-l eng --oem 3 --psm 6'
 |--------|----------|-------------|
 | `GET` | `/` | Home page with upload form |
 | `POST` | `/` | Process uploaded image and extract text |
-
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. **Open a Pull Request**
-
-### Development Guidelines
-
-- Follow PEP 8 style guidelines
-- Add tests for new features
-- Update documentation
-- Ensure backward compatibility
 
 
 
