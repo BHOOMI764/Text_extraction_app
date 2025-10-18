@@ -10,7 +10,7 @@
 
 **Transform images into text with AI-powered OCR technology**
 
-[🚀 Live Demo](#) • [📖 Documentation](#documentation) • [🐛 Report Bug](#) • [💡 Request Feature](#)
+<img width="1911" height="921" alt="image" src="https://github.com/user-attachments/assets/a1fa4e9a-8f55-41bb-a4d7-c2fa2c109985" />
 
 </div>
 
